@@ -1,0 +1,18 @@
+import { Canvas, Meta,Story ,Title,Description} from '@storybook/blocks';
+
+import * as ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+デフォルトのボタン
+
+<Canvas>
+    <Story of={ButtonStories.Solid} />
+    <Title>solid</Title>
+    <Description>これはテスト</Description>
+</Canvas>
+
+{/* <Canvas of={ButtonStories.Solid} />
+<Canvas of={ButtonStories.Outline} /> */}

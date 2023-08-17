@@ -6,7 +6,6 @@ import { Button } from '~/components/button';
 const meta = {
   title: 'component/Button',
   component: Button,
-  tags: ['autodocs'],
   argTypes: {
     variant:{
       control:"select",
@@ -14,7 +13,7 @@ const meta = {
     },
     styleColor:{
       control:"select",
-      options:["sky","red","violet","rose","pink","yellow","slate","teal","emerald"]
+      options:["sky","red","violet","rose","pink","yellow","slate","teal","emerald"],
     },
     disabled:{
       control:"boolean"
