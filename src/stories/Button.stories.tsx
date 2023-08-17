@@ -4,7 +4,7 @@ import { Button } from '~/components/button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/solid/writing-stories/introduction
 const meta = {
-  title: 'Example/Button',
+  title: 'component/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
@@ -15,8 +15,14 @@ const meta = {
     styleColor:{
       control:"select",
       options:["sky","red","violet","rose","pink","yellow","slate","teal","emerald"]
+    },
+    disabled:{
+      control:"boolean"
     }
   },
+  args:{
+    disabled:false
+  }
 } satisfies Meta<typeof Button>;
 
 export default meta;
