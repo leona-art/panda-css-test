@@ -1,3 +1,6 @@
+import type { Preview } from "storybook-solidjs";
+import "../src/root.css"
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
